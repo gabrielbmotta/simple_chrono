@@ -3,7 +3,7 @@
 
 int main()
 {
-    ScopeChronometer<std::chrono::microseconds> c;
+    ScopeChronometer<std::chrono::milliseconds> c{"Main"};
     int my_array[100000];
     for (int i = 0; i < 100000; i++){
         my_array[i] = i;
